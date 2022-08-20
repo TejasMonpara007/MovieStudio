@@ -1,0 +1,17 @@
+
+  <div class="containerBox">
+    <p class="listOfMoviespara">Movie Creation</p>
+    <form action="" method="Post" role="form" (ngSubmit)="createNewMovie(createMovie)">
+      <label for="name">Movie Name: </label><br>
+      <input id="name" type="text" [(ngModel)]="createMovie.mName" name="mName"><br>
+      <label for="category">Movie Category:</label><br>
+      <input id="type" type="text" [(ngModel)]="createMovie.mCategory" name="mCategory"><br>
+      <label for="ratings">Movie Rating:</label><br>
+      <input id="type" type="text" [(ngModel)]="createMovie.mRatings" name="mRatings"><br>
+      <label for="releasedyear">Released Year:</label><br>
+      <input id="type" type="text" [(ngModel)]="createMovie.releasedYear" name="releasedYear"><br>
+      <label for="estimatedearning">Estimated Earnings:</label><br>
+      <input id="type" type="text" [(ngModel)]="createMovie.estimatedEarnings" name="estimatedEarnings"><br>
+      <button class="btn">Create Movie</button>
+    </form>
+  </div>

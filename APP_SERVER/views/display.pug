@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+  h2#disheader Movies Details
+    p#sample
+    p#specificMovies= "Movies Name: " + currentMovies.mName
+    p.lineP ------------------------------------------------------
+    p#specificMovies= "Category: " + currentMovies.mCategory
+    p.lineP ------------------------------------------------------
+    p#specificMovies= "Ratings: " + currentMovies.mRatings
+    p.lineP ------------------------------------------------------
+    p#specificMovies= "Released Year: " + currentMovies.releasedYear
+    p.lineP ------------------------------------------------------
+    p#specificMovies= "Earnings: " + currentMovies.estimatedEarnings
+
+  footer#footer
+    p Copyright (c) Movie Studio | All Rights Reserved

@@ -1,0 +1,22 @@
+<h2 class="mymovieHtag">Movie Details</h2>
+<div>
+    <div>
+      <p id="sample"></p>
+      <p id="specificMovies">Movie Name: {{ movieDetails.mName }} </p>
+      <p class="lineP">------------------------------------------------------------------</p>
+      <p id="specificMovies">Genre: {{ movieDetails.mCategory }} </p>
+      <p class="lineP">------------------------------------------------------------------</p>
+      <p id="specificMovies">Ratings: {{ movieDetails.mRatings }}</p>
+      <p class="lineP">------------------------------------------------------------------</p>
+      <p id="specificMovies">Released Year:{{ movieDetails.releasedYear }}</p>
+      <p class="lineP">------------------------------------------------------------------</p>
+      <p id="specificMovies">Estimated Earnings: {{ movieDetails.estimatedEarnings }}$</p>
+      <p class="lineP">------------------------------------------------------------------</p>
+    </div>
+</div>
+
+<a routerLink="/delete/{{ movieDetails._id }}"> 
+  <button class="btn">Delete</button></a>
+
+<a routerLink="/update/{{ movieDetails._id }}"> 
+    <button class="btn">Update</button></a>

@@ -1,0 +1,19 @@
+<h2 class="mymovieHtag"> List of Movies </h2>
+
+<style>
+  body{
+    background-color: white;
+  }
+</style>
+
+<div *ngFor="let mymovielist of movies;" class="col-xs-4 col-md-4">
+  <a id="sampleAnchor" routerLink="/movies/{{ mymovielist._id }}">
+    Movie Name: {{ mymovielist.mName }}
+    Category: {{ mymovielist.mCategory }}
+  </a>
+
+</div>
+
+<a href="/new"> 
+  <button class="btn">Create Movie</button></a>
+

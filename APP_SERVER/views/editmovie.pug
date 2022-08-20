@@ -1,0 +1,28 @@
+extends layout 
+
+block content 
+    .containerBox
+        p.listOfMoviespara Update Movie
+        form(action='' method= 'Post')
+            label(for="name") Movie Name: 
+            br
+            input#name(type='text' name='mName' value=(undefined===movies ? '' : movies.mName))
+            br
+            label(for="category") Movie Category:
+            br
+            input#type(type='text' name='mCategory' value=(undefined===movies ? '' : movies.mCategory))
+            br
+            label(for="ratings") Movie Rating:
+            br
+            input#type(type='text' name='mRatings' value=(undefined===movies ? '' : movies.mRatings))
+            br
+            label(for="releasedyear") Released Year:
+            br
+            input#type(type='text' name='releasedYear' value=(undefined===movies ? '' : movies.releasedYear))
+            br
+            label(for="estimatedearning") Estimated Earnings:
+            br
+            input#type(type='text' name='estimatedEarnings' value=(undefined===movies ? '' : movies.estimatedEarnings))
+            br
+            button.btn Update Movies
+

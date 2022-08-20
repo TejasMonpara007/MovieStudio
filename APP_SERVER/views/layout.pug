@@ -1,0 +1,46 @@
+doctype,html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
+    link(rel='stylesheet', href='/build/styles.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+  body
+    block content
+    block scripts
+      script(src='/build/main.js')
+      script(src='/build/polyfills.js')
+      script(src='/build/runtime.js')
+      script(src='/build/vendor.js')
+
+    //- .navbar.navbar-default.navbar-fixed-top
+    //-   .container
+    //-     .navbar-header
+    //-       a.navbar-brand(href='/') Movie Studio
+    //-       button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+    //-         span.icon-bar
+    //-         span.icon-bar
+    //-         span.icon-bar
+    //-     #navbar-main.navbar-collapse.collapse
+    //-       ul.nav.navbar-nav
+    //-         li
+    //-           a(href='/about/') About
+
+    //-         li
+    //-           a(href='/movies/') Movie List
+
+    //-         li 
+    //-           a(href='/create-movie/') Create 
+        
+    //- .container
+    //-   block content
+
+    //-   footer 
+    //-     .row 
+    //-       .col.xs-12
+    //-         small &copy; Movie Studio | All Rights Reserved
+
+    //- script(src='/javascripts/jquery-1.11.1.min.js')
+    //- script(src='/bootstrap/js/bootstrap.min.js')
